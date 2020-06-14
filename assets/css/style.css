@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color palette */
+:root {
+    --persian-plum: rgba(101, 13, 27, 1);
+    --cafe-au-lait: rgba(173, 131, 80, 1);
+    --black: rgba(0, 0, 0, 1);
+    --soft: rgba(121, 115, 157, 1);
+    --light: rgba(255, 238, 242, 1);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px 35px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 2vw;
+    font-weight: lighter;
+    color: var(--light);
+    margin: 0;
+}
+
+nav.select a::before, .select a::after {
+    position: absolute;
+    content:"";
+    height: 100%;
+    width: 2px;
+    top: 0;
+    background: var(--light);
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+nav.select a::before {
+    left: 0;
+}
+
+nav.select a::after {
+    right: 0;
+}
+
+nav.select a:hover::before, nav .select a:hover::after {
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    color: var(--light);
+}
+
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 80vh;
+    padding: 50px;
+}
+
+.selfie {
+    padding: 140px 125px;
+    background-image: url("../images/junior.JPG");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+
+}
+
+body {
+    color: var(--cafe-au-lait);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.page-section {
+    background-color: var(--persian-plum);
+    padding: 25px 40px;
+}
