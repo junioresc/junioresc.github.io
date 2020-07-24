@@ -5,6 +5,6 @@ This is my online web portfolio that I am going to present to potential employer
 Not my best work but this will be updated as I learn more.
 
 ## Screenshot:
-![Image of portfolio nav and hero](/assets/images/screenshots/portfolio.PNG)
+![Image of portfolio nav and hero](/assets/images/screenshots/portfolio.jpg)
 ## Website:
 https://junioresc.github.io/
