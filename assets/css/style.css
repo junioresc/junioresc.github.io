@@ -169,13 +169,13 @@ body {
 }
 
 .run-buddy {
-    background-image: url("../images/screenshots/run-buddy.PNG");
+    background-image: url("../images/screenshots/run-buddy.jpg");
     background-size: 450px;
     background-repeat: no-repeat;
 }
   
 .horiseon-refactor {
-    background-image: url("../images/screenshots/horiseon-nav-with-hero.PNG");
+    background-image: url("../images/screenshots/horiseon-nav-with-hero.jpg");
     background-size: 450px;
     background-repeat: no-repeat;
 }
@@ -187,7 +187,7 @@ body {
 }
 
 .nomadica {
-    background-image: url("../images/screenshots/nomadica.png");
+    background-image: url("../images/screenshots/nomadica.jpg");
     background-size: 450px;
     background-repeat: no-repeat;
 }
