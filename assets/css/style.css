@@ -18,7 +18,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../images/hero-bg.jpg");
+    background-color: var(--black);
     background-size: cover;
     background-attachment: fixed;
     padding: 20px 35px;
@@ -33,6 +33,10 @@ header h1 {
     font-weight: lighter;
     color: var(--light);
     margin: 0;
+}
+
+h2 {
+    margin-bottom: 10px;
 }
 
 nav.select a::before, nav.select a::after {
@@ -69,14 +73,14 @@ header a {
 
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
+    background-size: 100vw;
     background-attachment: fixed;
     background-position: 80%;
     display: flex;
     justify-content: flex-start;
+    background-repeat: no-repeat;
     flex-wrap: wrap;
     align-items: center;
-    min-height: 80vh;
     padding: 50px;
 }
 
@@ -97,11 +101,15 @@ body {
 
 .page-section {
     background-color: var(--persian-plum);
-    padding: 25px 40px;
+    padding: 25px 200px;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
+}
+
+#work, #contact {
+    display: block;
 }
 
 .grid-container {
@@ -109,7 +117,7 @@ body {
     column-gap: 15px;
     row-gap: 15px;
     grid-auto-flow: column;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(200px, 1fr);
 }
 
@@ -119,19 +127,16 @@ body {
     padding: 0 0 20px 0;
     text-decoration: none;
     border: 5px solid var(--soft);
-    grid-column: span 4;
     background-color: var(--black);
     color: var(--light);
     min-height: 200px;
-}
-
-.grid-item:first-child {
-    grid-column: span 8;
-    grid-row: span 2;
+    grid-column: span 3;
+    grid-row: span 1;
 }
 
 .grid-item:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    transition: .5s;
+    opacity: .8;
 }
 
 .text {
@@ -141,28 +146,112 @@ body {
 .contact address {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
 .contact address a {
     text-decoration: none;
-    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+    background-color: var(--cafe-au-lait);
     font-style: normal;
     font-size: 1rem;
     color: var(--light);
-    display: inline-block;
+    border: 5px solid var(--cafe-au-lait);
+    border-radius: .5rem;
+    padding: 1rem;
 }
 
 .contact address a:hover {
-    background-size: 100% 88%;
+    transition: .5s;
+    background-color: var(--black);
+    border: 5px solid var(--black);
 }
 
 .run-buddy {
     background-image: url("../images/screenshots/run-buddy.PNG");
-  }
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
   
 .horiseon-refactor {
     background-image: url("../images/screenshots/horiseon-nav-with-hero.PNG");
-  }
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
+
+.js-password-generator {
+    background-image: url("../images/screenshots/password-gen-site.PNG");
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
+
+.nomadica {
+    background-image: url("../images/screenshots/nomadica.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:1024px) {
+    header h1 {
+        font-size: 3.5vw;
+    }
+    .page-section {
+        padding: 25px 100px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-rows: minmax(200px, 1fr);
+    }
+    .grid-item {
+        grid-column: span 5;
+        grid-row: span 1;
+    }
+    .hero {
+        background-size: 120vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero {
+        justify-content: center;
+        background-size: 140vw;
+    }
+    .contact address a {
+        width: 60vw;
+        margin: 1rem;
+    }
+    .contact address {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:640px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    .select {
+        display: flex;
+        justify-content: center;
+    }
+    header h1 {
+        font-size: 6vw;
+        margin-bottom: 1.5rem;
+    }
+    .hero {
+        background-size: 300vw;
+    }
+    .contact address a {
+        width: 60vw;
+    }
+    .grid-container {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .page-section {
+        padding: 25px 50px;
+    }
+}
+
