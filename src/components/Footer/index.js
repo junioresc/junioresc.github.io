@@ -4,17 +4,20 @@ function Footer() {
 
     return (
       <section className="page-section contact" id="contact">
-        <h2>Contact Me</h2>
-        <div>
-          <address>
-            <a href="tel:+5615778575">(561)577-8575</a>
-            <a href="mailto:junioresc1092@gmail.com">junioresc1092@gmail.com</a>
-            <a href="https://github.com/junioresc">GitHub</a>
-            <a href="https://www.linkedin.com/in/junior-escobar-87a8541a7/">
-              LinkedIn
-            </a>
-          </address>
-        </div>
+        <address>
+          <a href="tel:+5615778575">
+            <i className="fas fa-mobile-alt big"></i> Phone Number
+          </a>
+          <a href="mailto:junioresc1092@gmail.com">
+            <i className="far fa-envelope big"></i> Email
+          </a>
+          <a href="https://github.com/junioresc">
+            <i className="fab fa-github-square big"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/junior-escobar-87a8541a7/">
+            <i className="fab fa-linkedin big"></i> LinkedIn
+          </a>
+        </address>
       </section>
     );
 }

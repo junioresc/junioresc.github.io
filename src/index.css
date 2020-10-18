@@ -53,7 +53,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-nav.select a::before, nav.select a::after {
+.select a::before, .select a::after {
     position: absolute;
     content:"";
     height: 100%;
@@ -64,15 +64,15 @@ nav.select a::before, nav.select a::after {
     transition: all 0.3s;
 }
 
-nav.select a::before {
+.select a::before {
     left: 0;
 }
 
-nav.select a::after {
+.select a::after {
     right: 0;
 }
 
-nav.select a:hover::before, nav.select a:hover::after {
+.select a:hover::before, .select a:hover::after {
     width: 100%;
 }
 
@@ -86,7 +86,7 @@ header a {
 }
 
 .hero {
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url("assets/images/hero-bg.jpg");
     background-size: 100vw;
     background-attachment: fixed;
     background-position: 80%;
@@ -100,7 +100,7 @@ header a {
 
 .selfie {
     padding: 140px 125px;
-    background-image: url("../images/junior.JPG");
+    background-image: url("assets/images/junior.JPG");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -130,9 +130,10 @@ body {
     display: grid;
     column-gap: 15px;
     row-gap: 15px;
-    grid-auto-flow: column;
+    grid-auto-flow: dense;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(200px, 1fr);
+    padding-top: 10px;
 }
 
 .grid-item {
@@ -157,6 +158,13 @@ body {
     background-color: var(--cafe-au-lait);
 }
 
+#contact-section {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+
 .contact address {
     display: flex;
     flex-wrap: wrap;
@@ -165,49 +173,125 @@ body {
     height: 100%;
 }
 
-.contact address a {
-    text-decoration: none;
-    background-color: var(--cafe-au-lait);
-    font-style: normal;
-    font-size: 1rem;
-    color: var(--light);
-    border: 5px solid var(--cafe-au-lait);
-    border-radius: .5rem;
-    padding: 1rem;
+form {
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.contact address a:hover {
-    transition: .5s;
-    background-color: var(--black);
-    border: 5px solid var(--black);
+label {
+  display: block;
+  font-size: 22px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 2px solid var(--cafe-au-lait);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid var(--soft);
+}
+
+textarea {
+	width: 100%;
+	height: 120px;
+    border: 2px solid var(--cafe-au-lait);
+    padding: 5px;
+    resize: vertical;
+}
+
+button {
+  font-size: 22px;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px auto;
+  color: var(--cafe-au-lait);
+  background-color: var(--black);
+  width: 50%;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+address a::before, address a::after {
+    position: absolute;
+    content:"";
+    height: 100%;
+    width: 2px;
+    top: 0;
+    background: var(--light);
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+address a::before {
+    left: 0;
+}
+
+address a::after {
+    right: 0;
+}
+
+address a:hover::before, address a:hover::after {
+    width: 100%;
+}
+
+address a {
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    color: var(--light);
+    font-style: normal;
+    font-size: 1rem;
 }
 
 .run-buddy {
-    background-image: url("../images/screenshots/run-buddy.jpg");
+    background-image: url("assets/images/screenshots/run-buddy.jpg");
     background-size: 450px;
     background-repeat: no-repeat;
 }
   
 .horiseon-refactor {
-    background-image: url("../images/screenshots/horiseon-nav-with-hero.jpg");
+    background-image: url("assets/images/screenshots/horiseon-nav-with-hero.jpg");
     background-size: 450px;
     background-repeat: no-repeat;
 }
 
 .js-password-generator {
-    background-image: url("../images/screenshots/password-gen-site.PNG");
+    background-image: url("assets/images/screenshots/password-gen-site.PNG");
     background-size: 450px;
     background-repeat: no-repeat;
 }
 
 .nomadica {
-    background-image: url("../images/screenshots/nomadica.jpg");
+    background-image: url("assets/images/screenshots/nomadica.jpg");
     background-size: 450px;
     background-repeat: no-repeat;
 }
 
 .dc-adopt {
-    background-image: url("../images/screenshots/dc-adopt.PNG");
+    background-image: url("assets/images/screenshots/dc-adopt.PNG");
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
+
+.pizza-hunt {
+    background-image: url("assets/images/screenshots/pizza-hunt.PNG");
     background-size: 450px;
     background-repeat: no-repeat;
 }
@@ -238,11 +322,11 @@ body {
         justify-content: center;
         background-size: 140vw;
     }
-    .contact address a {
-        width: 60vw;
-        margin: 1rem;
+    address a {
+        width: 50vw;
+        margin: 1rem auto;
     }
-    .contact address {
+    address {
         justify-content: center;
     }
 }
@@ -263,6 +347,13 @@ body {
     .hero {
         background-size: 300vw;
     }
+    form {
+        width: 300px;
+        margin: auto;
+    }
+    #contact-form {
+        padding: 0px;
+    }
     .contact address a {
         width: 60vw;
     }
@@ -271,6 +362,6 @@ body {
         grid-template-rows: repeat(4, 1fr);
     }
     .page-section {
-        padding: 25px 50px;
+        padding: 25px 10px;
     }
 }
