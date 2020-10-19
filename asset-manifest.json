@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.879db04a.chunk.css",
+    "main.js": "/static/js/main.51ab6950.chunk.js",
+    "main.js.map": "/static/js/main.51ab6950.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.532fc730.js",
+    "runtime-main.js.map": "/static/js/runtime-main.532fc730.js.map",
+    "static/js/2.48a2b034.chunk.js": "/static/js/2.48a2b034.chunk.js",
+    "static/js/2.48a2b034.chunk.js.map": "/static/js/2.48a2b034.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3b4a67933485659889fcc032d787433f.js": "/precache-manifest.3b4a67933485659889fcc032d787433f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.879db04a.chunk.css.map": "/static/css/main.879db04a.chunk.css.map",
+    "static/js/2.48a2b034.chunk.js.LICENSE.txt": "/static/js/2.48a2b034.chunk.js.LICENSE.txt",
+    "static/media/dc-adopt.PNG": "/static/media/dc-adopt.3ff47898.PNG",
+    "static/media/index.css": "/static/media/junior.13430b95.JPG",
+    "static/media/horiseon-nav-with-hero.jpg": "/static/media/horiseon-nav-with-hero.e84f862b.jpg",
+    "static/media/nomadica.jpg": "/static/media/nomadica.c0fa71c6.jpg",
+    "static/media/password-gen-site.PNG": "/static/media/password-gen-site.4288d574.PNG",
+    "static/media/pizza-hunt.PNG": "/static/media/pizza-hunt.180aef31.PNG",
+    "static/media/portfolio.jpg": "/static/media/portfolio.430894fa.jpg",
+    "static/media/run-buddy.jpg": "/static/media/run-buddy.36c81afe.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.532fc730.js",
+    "static/js/2.48a2b034.chunk.js",
+    "static/css/main.879db04a.chunk.css",
+    "static/js/main.51ab6950.chunk.js"
+  ]
+}
