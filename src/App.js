@@ -19,10 +19,8 @@ function App() {
         setWorkSelected={setWorkSelected}
       />
       <Hero />
-      <main>
-        {workSelected ? <Project /> : contactSelected ? <ContactForm /> : <AboutMe />}
-        <Footer />
-      </main>
+      {workSelected ? <Project /> : contactSelected ? <ContactForm /> : <AboutMe />}
+      <Footer />
     </div>
   );
 }

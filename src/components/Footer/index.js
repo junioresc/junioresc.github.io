@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
 
     return (
-      <section className="page-section contact" id="contact">
+      <footer className="page-section contact" id="contact">
         <address>
           <a href="tel:+5615778575">
             <i className="fas fa-mobile-alt big"></i> Phone Number
@@ -18,7 +18,7 @@ function Footer() {
             <i className="fab fa-linkedin big"></i> LinkedIn
           </a>
         </address>
-      </section>
+      </footer>
     );
 }
 
