@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8bee46c47701acf6aded0331af1c6417",
+    "revision": "3cf91cfe102416efb922d8cd72474a56",
     "url": "/index.html"
   },
   {
-    "revision": "6ea564928fc18a969bb5",
-    "url": "/static/css/main.e9abe58b.chunk.css"
+    "revision": "c8adbb355b56e8766d1f",
+    "url": "/static/css/main.915a08d7.chunk.css"
   },
   {
     "revision": "0a948a1205e5f0d48c7b",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.48a2b034.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6ea564928fc18a969bb5",
-    "url": "/static/js/main.26158f72.chunk.js"
+    "revision": "c8adbb355b56e8766d1f",
+    "url": "/static/js/main.d15de157.chunk.js"
   },
   {
     "revision": "dbcdf457667c3c25dc8a",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c0fa71c6b462f43f03c0df3104cc05ad",
     "url": "/static/media/nomadica.c0fa71c6.jpg"
+  },
+  {
+    "revision": "7b63ce6463a3838d6300cdf152d09a41",
+    "url": "/static/media/otakuhq.7b63ce64.png"
   },
   {
     "revision": "4288d574d2cbeaa240231b79356968df",
