@@ -118,6 +118,10 @@ body {
   align-items: center;
 }
 
+.skills li {
+  font-size: 20px;
+}
+
 .page-section {
   background-color: var(--persian-plum);
   padding: 25px 200px;
@@ -337,8 +341,8 @@ address a {
   background-repeat: no-repeat;
 }
 
-.horiseon-refactor {
-  background-image: url('assets/images/screenshots/horiseon-nav-with-hero.jpg');
+.shop-shop {
+  background-image: url('assets/images/screenshots/shop-shop.PNG');
   background-size: cover;
   background-repeat: no-repeat;
 }

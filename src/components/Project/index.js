@@ -24,14 +24,14 @@ function Project() {
       photo: 'nomadica.jpg',
     },
     {
-      name: 'Horiseon Refactor',
-      class: 'horiseon-refactor',
-      tools: 'HTML/CSS',
-      deployed: 'https://junioresc.github.io/horiseon-refactor/',
-      github: 'https://github.com/junioresc/horiseon-refactor',
+      name: 'Shop-Shop',
+      class: 'shop-shop',
+      tools: 'HTML/CSS/JS/React/Redux',
+      deployed: 'https://murmuring-shelf-28748.herokuapp.com/',
+      github: 'https://github.com/junioresc/shop-shop',
       description:
-        'When I first saw this website, I saw that there was div soup and changed many of the elements to follow HTML5 semantics. The CSS for the website also had a bunch of repeated code so I also cleaned up the stylings. The last important thing I added was comments in the HTML file to distiguish what the code is rendering.',
-      photo: 'horiseon-nav-with-hero.jpg',
+        'This application is an e-commerce site that showcases multiple products. If you have an account created, you can add items to your shopping cart and once you finish shopping you can checkout. We process payments securely using the Stripe API.',
+      photo: 'shop-shop.PNG',
     },
     {
       name: 'JavaScript Password Generator',
@@ -70,7 +70,7 @@ function Project() {
       deployed: 'https://otakuhq.herokuapp.com/',
       github: 'https://github.com/Kos-MosV4/otakuhq',
       description:
-        'Sometimes we find ourselves in a situation where we have to make a difficult decision. Perhaps we get sick, have to move far away, or maybe you come across a stray that you can’t keep. Finding a no-kill shelter can be tough, and even with finding one, shelters can be filled with diseases, and pets too often do not get the best care. We decided to cut out the middle-man, allowing pet owners to connect with each other online and find a forever-home for their pet.',
+        "Have you ever thought about all the anime you're currently watching? Can you remember every single one? Wouldn't it be cool to keep track of all the anime's you're watching all in a single place? Well OtakuHQ is the website made specifically for that. Made by Otakus for other Weebs to enjoy and congregate. OtakuHQ allows you to search for whatever anime of your choosing. There is also a section detailing the most popular anime and the current trending anime that is airing on TV.",
       photo: 'otakuhq.png',
     },
   ];
