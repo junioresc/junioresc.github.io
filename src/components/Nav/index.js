@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from '../../assets/resources/resume.pdf';
 
 function Nav(props) {
   const {
@@ -39,7 +40,7 @@ function Nav(props) {
       >
         Contact Me
       </a>
-      <a href="assets\resources\resume.pdf" download>
+      <a href={resume} download>
         Resume <i class="fas fa-download"></i>
       </a>
     </nav>
