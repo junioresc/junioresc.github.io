@@ -11,10 +11,10 @@ function Footer() {
           <a href="mailto:junioresc1092@gmail.com">
             <i className="far fa-envelope big"></i> Email
           </a>
-          <a href="https://github.com/junioresc">
+          <a href="https://github.com/junioresc" rel="noopener noreferrer" target="_blank">
             <i className="fab fa-github-square big"></i> GitHub
           </a>
-          <a href="https://www.linkedin.com/in/junior-escobar-87a8541a7/">
+          <a href="https://www.linkedin.com/in/junior-escobar-87a8541a7/" rel="noopener noreferrer" target="_blank">
             <i className="fab fa-linkedin big"></i> LinkedIn
           </a>
         </address>

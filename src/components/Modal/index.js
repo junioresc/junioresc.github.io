@@ -12,10 +12,10 @@ function Modal({ onClose, currentProject }) {
         />
         <p className="tools">{tools}</p>
         <address>
-          <a className="modalLink" href={github}>
+          <a className="modalLink" href={github} rel="noopener noreferrer" target="_blank">
             <i className="fab fa-github-square big"></i> View code on GitHub
           </a>
-          <a className="modalLink" href={deployed}>
+          <a className="modalLink" href={deployed} rel="noopener noreferrer" target="_blank">
             <i className="fab fa-product-hunt"></i> View deployed application
           </a>
         </address>
