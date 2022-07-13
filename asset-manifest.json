@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6740ca24.css",
-    "main.js": "/static/js/main.bb8532b7.js",
+    "main.js": "/static/js/main.145fcaee.js",
     "static/media/junior.JPG": "/static/media/junior.eaafec34923587f9d540.JPG",
     "static/media/dc-adopt.PNG": "/static/media/dc-adopt.ae9cf227c555fa09959b.PNG",
     "static/media/shop-shop.PNG": "/static/media/shop-shop.7b02c97c84c0ba856789.PNG",
@@ -15,10 +15,10 @@
     "static/media/password-gen-site.PNG": "/static/media/password-gen-site.1f6da2e40955bd029353.PNG",
     "index.html": "/index.html",
     "main.6740ca24.css.map": "/static/css/main.6740ca24.css.map",
-    "main.bb8532b7.js.map": "/static/js/main.bb8532b7.js.map"
+    "main.145fcaee.js.map": "/static/js/main.145fcaee.js.map"
   },
   "entrypoints": [
     "static/css/main.6740ca24.css",
-    "static/js/main.bb8532b7.js"
+    "static/js/main.145fcaee.js"
   ]
 }
