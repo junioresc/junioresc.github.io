@@ -42,7 +42,7 @@ function ContactForm() {
           <label htmlFor="name">Name:</label>
           <input
             type="text"
-            name="name"
+            name="Name"
             defaultValue={name}
             onBlur={handleChange}
           />
@@ -51,7 +51,7 @@ function ContactForm() {
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
-            name="email"
+            name="Email"
             defaultValue={email}
             onBlur={handleChange}
           />
@@ -59,7 +59,7 @@ function ContactForm() {
         <div>
           <label htmlFor="message">Message:</label>
           <textarea
-            name="message"
+            name="Message"
             rows="5"
             defaultValue={message}
             onBlur={handleChange}
