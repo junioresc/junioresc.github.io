@@ -12,15 +12,15 @@ function Modal({ onClose, currentProject }) {
         />
         <p className="tools">{tools}</p>
         <address>
-          <a href={github}>
+          <a className="modalLink" href={github}>
             <i className="fab fa-github-square big"></i> View code on GitHub
           </a>
-          <a href={deployed}>
+          <a className="modalLink" href={deployed}>
             <i className="fab fa-product-hunt"></i> View deployed application
           </a>
         </address>
-        <p>{description}</p>
-        <button type="button" onClick={onClose}>
+        <p className="modalDesc">{description}</p>
+        <button className="modalLink" type="button" onClick={onClose}>
           Close this modal
         </button>
       </div>

@@ -39,6 +39,10 @@ h2 {
   margin-bottom: 10px;
 }
 
+.select {
+  display: flex;
+}
+
 .select a::before,
 .select a::after {
   position: absolute;
@@ -74,7 +78,7 @@ header a {
 }
 
 .hero {
-  background-image: url('assets/images/hero-bg.jpg');
+  background-image: url('assets/images/hero-bg.jpeg');
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -86,13 +90,12 @@ header a {
 }
 
 .selfie {
-  padding: 140px 125px;
+  padding: 140px 140px;
   background-image: url('assets/images/junior.JPG');
   background-position: center;
   background-size: cover;
   display: flex;
-  border: 1rem solid var(--light);
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 html,
@@ -101,7 +104,8 @@ body {
 }
 
 body {
-  color: var(--cafe-au-lait);
+  /* color: var(--cafe-au-lait); */
+  color: black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -123,7 +127,7 @@ body {
 }
 
 .page-section {
-  background-color: var(--persian-plum);
+  background-color: white;
   padding: 25px 200px;
   display: flex;
   flex-wrap: wrap;
@@ -166,10 +170,12 @@ body {
 }
 
 .tools {
+  color: var(--light);
   text-align: left;
 }
 
 .modalTitle {
+  color: var(--light);
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 25px;
@@ -191,7 +197,7 @@ body {
   align-items: flex-end;
   padding: 0 0 20px 0;
   text-decoration: none;
-  border: 5px solid var(--soft);
+  border: 5px solid var(--black);
   background-color: var(--black);
   color: var(--light);
   min-height: 200px;
@@ -205,7 +211,8 @@ body {
 }
 
 .text {
-  background-color: var(--cafe-au-lait);
+  background-color: var(--black);
+  padding: 0.5rem;
 }
 
 #contact-section {
@@ -264,7 +271,7 @@ button {
   padding: 10px 10px;
   position: relative;
   cursor: pointer;
-  color: var(--light);
+  color: var(--black);
   background-color: transparent;
   font-style: normal;
   font-size: 1rem;
@@ -281,7 +288,7 @@ button::after {
   height: 100%;
   width: 2px;
   top: 0;
-  background: var(--light);
+  background: var(--black);
   opacity: 0.3;
   transition: all 0.3s;
 }
@@ -306,7 +313,7 @@ address a::after {
   height: 100%;
   width: 2px;
   top: 0;
-  background: var(--light);
+  background: var(--black);
   opacity: 0.3;
   transition: all 0.3s;
 }
@@ -330,9 +337,22 @@ address a {
   padding: 10px 10px;
   position: relative;
   cursor: pointer;
-  color: var(--light);
+  color: var(--black);
   font-style: normal;
   font-size: 1rem;
+}
+
+.modalLink {
+  color: var(--light);
+}
+
+.modalLink::before,
+.modalLink::after {
+  background: var(--light);
+}
+
+.modalDesc {
+  color: var(--light);
 }
 
 .run-buddy {
