@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.6740ca24.css",
-    "main.js": "/static/js/main.c703ede3.js",
+    "main.js": "/static/js/main.bb8532b7.js",
     "static/media/junior.JPG": "/static/media/junior.eaafec34923587f9d540.JPG",
     "static/media/dc-adopt.PNG": "/static/media/dc-adopt.ae9cf227c555fa09959b.PNG",
     "static/media/shop-shop.PNG": "/static/media/shop-shop.7b02c97c84c0ba856789.PNG",
     "static/media/pizza-hunt.PNG": "/static/media/pizza-hunt.c52e42e36a1ad0d2d26b.PNG",
     "static/media/otakuhq.png": "/static/media/otakuhq.f5d48c64d764e986790b.png",
     "static/media/hero-bg.jpeg": "/static/media/hero-bg.2526f3e6de39694dd020.jpeg",
-    "static/media/portfolio.png": "/static/media/portfolio.efabf15a269c0ae77bdc.png",
+    "static/media/portfolio.png": "/static/media/portfolio.020871ee5402e0256817.png",
     "static/media/nomadica.jpg": "/static/media/nomadica.b0db7ce40fad1061e8b3.jpg",
     "static/media/run-buddy.jpg": "/static/media/run-buddy.5c83abc64bb496f6e993.jpg",
     "static/media/resume.pdf": "/static/media/resume.4833089d00f79d610e24.pdf",
     "static/media/password-gen-site.PNG": "/static/media/password-gen-site.1f6da2e40955bd029353.PNG",
     "index.html": "/index.html",
     "main.6740ca24.css.map": "/static/css/main.6740ca24.css.map",
-    "main.c703ede3.js.map": "/static/js/main.c703ede3.js.map"
+    "main.bb8532b7.js.map": "/static/js/main.bb8532b7.js.map"
   },
   "entrypoints": [
     "static/css/main.6740ca24.css",
-    "static/js/main.c703ede3.js"
+    "static/js/main.bb8532b7.js"
   ]
 }
