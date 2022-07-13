@@ -17,7 +17,7 @@ function Project() {
       name: 'Nomadica',
       class: 'nomadica',
       tools: 'HTML/CSS-Tailwind/JS',
-      deployed: 'https://dj-viking.github.io/Nomadica/',
+      deployed: 'https://nomadica-app.herokuapp.com/',
       github: 'https://github.com/Dj-Viking/Nomadica',
       description:
         "Have you ever thought about packing your bags and starting over somewhere new? It's tempting, but it can be distressing not knowing how people with your occupation fare financially in a foreign land. Nomadica’s purpose is to give you the information needed to make an informed, confident decision about relocating.",
