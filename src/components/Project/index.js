@@ -31,7 +31,7 @@ function Project() {
       github: 'https://github.com/junioresc/shop-shop',
       description:
         'This application is an e-commerce site that showcases multiple products. If you have an account created, you can add items to your shopping cart and once you finish shopping you can checkout. We process payments securely using the Stripe API.',
-      photo: 'shop-shop.PNG',
+      photo: 'shop-shop.png',
     },
     {
       name: 'JavaScript Password Generator',
@@ -41,7 +41,7 @@ function Project() {
       github: 'https://github.com/junioresc/js-password-generator',
       description:
         'This application was made in order to produce a random password at the request of the user. The password must be at least 8 characters long and no more than 128. It handles edge cases in case the user decides to not input a response. The generator will accept at least one of the following character types: Uppercase, Lowercase, Numbers, Special Characters.',
-      photo: 'password-gen-site.PNG',
+      photo: 'password-gen-site.png',
     },
     {
       name: 'Pizza Hunt',
@@ -51,7 +51,7 @@ function Project() {
       github: 'https://github.com/junioresc/pizza-hunt',
       description:
         'Pizza Hunt—a self-aware riff on social-media applications that already exist for other topics—lets users connect with each other based on their love of pizza. In Pizza Hunt, users can share and discuss their dream pizza-topping combinations. Pizza is ubiquitous in everyday life all over the world, and no application has ever been created with the sole purpose of facilitating discussions about it.',
-      photo: 'pizza-hunt.PNG',
+      photo: 'pizza-hunt.png',
     },
     {
       name: 'DC-Adopt',
@@ -61,7 +61,7 @@ function Project() {
       github: 'https://github.com/hannahbrijenkins/DC-Adopt',
       description:
         'Sometimes we find ourselves in a situation where we have to make a difficult decision. Perhaps we get sick, have to move far away, or maybe you come across a stray that you can’t keep. Finding a no-kill shelter can be tough, and even with finding one, shelters can be filled with diseases, and pets too often do not get the best care. We decided to cut out the middle-man, allowing pet owners to connect with each other online and find a forever-home for their pet.',
-      photo: 'dc-adopt.PNG',
+      photo: 'dc-adopt.png',
     },
     {
       name: 'OtakuHQ',
@@ -72,6 +72,16 @@ function Project() {
       description:
         "Have you ever thought about all the anime you're currently watching? Can you remember every single one? Wouldn't it be cool to keep track of all the anime's you're watching all in a single place? Well OtakuHQ is the website made specifically for that. Made by Otakus for other Weebs to enjoy and congregate. OtakuHQ allows you to search for whatever anime of your choosing. There is also a section detailing the most popular anime and the current trending anime that is airing on TV.",
       photo: 'otakuhq.png',
+    },
+    {
+      name: 'Wall App',
+      class: 'wallapp',
+      tools: 'React/CSS/JS',
+      deployed: 'https://wall-app-social.herokuapp.com/',
+      github: 'https://github.com/junioresc/wallapp',
+      description:
+        "Wall App is an application that allows users to register, login, and post on the wall.",
+      photo: 'wallapp.png',
     },
   ];
 

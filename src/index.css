@@ -91,7 +91,7 @@ header a {
 
 .selfie {
   padding: 140px 140px;
-  background-image: url('assets/images/junior.JPG');
+  background-image: url('assets/images/junior.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -363,13 +363,13 @@ address a {
 }
 
 .shop-shop {
-  background-image: url('assets/images/screenshots/shop-shop.PNG');
+  background-image: url('assets/images/screenshots/shop-shop.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .js-password-generator {
-  background-image: url('assets/images/screenshots/password-gen-site.PNG');
+  background-image: url('assets/images/screenshots/password-gen-site.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -381,19 +381,25 @@ address a {
 }
 
 .dc-adopt {
-  background-image: url('assets/images/screenshots/dc-adopt.PNG');
+  background-image: url('assets/images/screenshots/dc-adopt.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .pizza-hunt {
-  background-image: url('assets/images/screenshots/pizza-hunt.PNG');
+  background-image: url('assets/images/screenshots/pizza-hunt.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .otakuhq {
   background-image: url('assets/images/screenshots/otakuhq.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wallapp {
+  background-image: url('assets/images/screenshots/wallapp.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
