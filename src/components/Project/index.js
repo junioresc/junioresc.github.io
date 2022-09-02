@@ -80,7 +80,7 @@ function Project() {
       deployed: 'https://wall-app-social.herokuapp.com/',
       github: 'https://github.com/junioresc/wallapp',
       description:
-        "Wall App is an application that allows users to register, login, and post on the wall.",
+        "Wall App is an application that allows users to register, login, and post on the wall. The front-end of the app was made using React, React-Bootstrap, Framer Motion to add some transitions to page changes, and Apollo-Client to request and cache data. The back-end server was set up with Apollo-Server-Express and uses Mongoose in order to communicate with the MongoDB database.",
       photo: 'wallapp.png',
     },
   ];
