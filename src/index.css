@@ -356,6 +356,16 @@ address a {
   color: var(--light);
 }
 
+.grid-item {
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  transition: 1s;
+  transform: scale(1.1);
+}
+
 .run-buddy {
   background-image: url('assets/images/screenshots/run-buddy.jpg');
   background-size: cover;
