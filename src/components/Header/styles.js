@@ -42,8 +42,12 @@ export const NavButton = styled(Button, {
 	paddingRight: '1rem',
 	fontWeight: isActive ? 700 : 500,
 	color: isActive ? theme.palette.primary.light : 'inherit',
+	transition: 'all 0.3s ease',
+	textTransform: 'none',
 	'&:hover': {
 		backgroundColor: 'rgba(121, 115, 221, 0.1)',
+		transform: 'none',
+		boxShadow: 'none',
 	},
 }))
 
