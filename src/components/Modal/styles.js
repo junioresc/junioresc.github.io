@@ -13,7 +13,8 @@ import {
 export const StyledDialog = styled(Dialog)(({ theme, fullScreen }) => ({
 	'& .MuiPaper-root': {
 		borderRadius: fullScreen ? 0 : '12px',
-		background: `linear-gradient(135deg, ${theme.palette.background.paper} 0%, rgba(121, 115, 221, 0.05) 100%)`,
+		background: theme.palette.background.paper,
+		boxShadow: '0px 24px 48px rgba(0, 0, 0, 0.4)',
 	},
 }))
 

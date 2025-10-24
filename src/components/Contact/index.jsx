@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { Container } from '@mui/material'
 import { motion } from 'framer-motion'
 import SendIcon from '@mui/icons-material/Send'
 import { validateEmail } from '../../utils/helpers'
+import Section from '../UI/Section'
 import {
-	ContactSection,
 	SectionTitle,
 	SectionSubtitle,
 	FormPaper,
@@ -117,83 +116,81 @@ function ContactForm() {
 	}
 
 	return (
-		<ContactSection id='contact'>
-			<Container maxWidth='md'>
-				<motion.div
-					variants={containerVariants}
-					initial='hidden'
-					whileInView='visible'
-					viewport={{ once: true, margin: '-100px' }}
-				>
-					<motion.div variants={itemVariants}>
-						<SectionTitle variant='h2' align='center'>
-							Contact Me
-						</SectionTitle>
-					</motion.div>
-
-					<motion.div variants={itemVariants}>
-						<SectionSubtitle variant='body1' align='center'>
-							Have a question or want to work together? Feel free to reach out!
-						</SectionSubtitle>
-					</motion.div>
-
-					<motion.div variants={itemVariants}>
-						<FormPaper elevation={0}>
-							<FormBox component='form' onSubmit={handleSubmit}>
-								{errorMessage && (
-									<StyledAlert severity='error'>{errorMessage}</StyledAlert>
-								)}
-
-								<StyledTextField
-									fullWidth
-									label='Name'
-									name='name'
-									value={name}
-									onChange={handleChange}
-									onBlur={handleBlur}
-									variant='outlined'
-									error={touched.name && !name}
-								/>
-
-								<StyledTextField
-									fullWidth
-									label='Email Address'
-									name='email'
-									type='email'
-									value={email}
-									onChange={handleChange}
-									onBlur={handleBlur}
-									variant='outlined'
-									error={touched.email && (!email || !validateEmail(email))}
-								/>
-
-								<StyledTextField
-									fullWidth
-									label='Message'
-									name='message'
-									value={message}
-									onChange={handleChange}
-									onBlur={handleBlur}
-									variant='outlined'
-									multiline
-									rows={6}
-									error={touched.message && !message}
-								/>
-
-								<SubmitButton
-									type='submit'
-									variant='contained'
-									size='large'
-									endIcon={<SendIcon />}
-								>
-									Submit
-								</SubmitButton>
-							</FormBox>
-						</FormPaper>
-					</motion.div>
+		<Section id='contact' maxWidth='md'>
+			<motion.div
+				variants={containerVariants}
+				initial='hidden'
+				whileInView='visible'
+				viewport={{ once: true, margin: '-100px' }}
+			>
+				<motion.div variants={itemVariants}>
+					<SectionTitle variant='h2' align='center'>
+						Contact Me
+					</SectionTitle>
 				</motion.div>
-			</Container>
-		</ContactSection>
+
+				<motion.div variants={itemVariants}>
+					<SectionSubtitle variant='body1' align='center'>
+						Have a question or want to work together? Feel free to reach out!
+					</SectionSubtitle>
+				</motion.div>
+
+				<motion.div variants={itemVariants}>
+					<FormPaper elevation={0}>
+						<FormBox component='form' onSubmit={handleSubmit}>
+							{errorMessage && (
+								<StyledAlert severity='error'>{errorMessage}</StyledAlert>
+							)}
+
+							<StyledTextField
+								fullWidth
+								label='Name'
+								name='name'
+								value={name}
+								onChange={handleChange}
+								onBlur={handleBlur}
+								variant='outlined'
+								error={touched.name && !name}
+							/>
+
+							<StyledTextField
+								fullWidth
+								label='Email Address'
+								name='email'
+								type='email'
+								value={email}
+								onChange={handleChange}
+								onBlur={handleBlur}
+								variant='outlined'
+								error={touched.email && (!email || !validateEmail(email))}
+							/>
+
+							<StyledTextField
+								fullWidth
+								label='Message'
+								name='message'
+								value={message}
+								onChange={handleChange}
+								onBlur={handleBlur}
+								variant='outlined'
+								multiline
+								rows={6}
+								error={touched.message && !message}
+							/>
+
+							<SubmitButton
+								type='submit'
+								variant='contained'
+								size='large'
+								endIcon={<SendIcon />}
+							>
+								Submit
+							</SubmitButton>
+						</FormBox>
+					</FormPaper>
+				</motion.div>
+			</motion.div>
+		</Section>
 	)
 }
 

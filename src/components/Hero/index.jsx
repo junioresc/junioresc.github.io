@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Stack, Button } from '@mui/material'
+import { Container, Stack } from '@mui/material'
+import Button from '../UI/Button'
 import { motion } from 'framer-motion'
 import juniorPhoto from '../../assets/images/junior.jpg'
 import {
@@ -46,7 +47,11 @@ function Hero() {
 				>
 					<ContentBox>
 						<motion.div variants={itemVariants}>
-							<ProfileAvatar src={juniorPhoto} alt='Junior Escobar' />
+							<ProfileAvatar
+								src={juniorPhoto}
+								alt='Junior Escobar'
+								imgProps={{ loading: 'lazy' }}
+							/>
 						</motion.div>
 
 						<TextBox>
@@ -64,8 +69,9 @@ function Hero() {
 
 							<motion.div variants={itemVariants}>
 								<Description variant='body1'>
-									I design and build clean, performant interfaces with a focus
-									on detail, accessibility, and delightful UX.
+									I build end-to-end solutions from robust backends to intuitive
+									frontends, creating scalable applications that deliver
+									exceptional user experiences across the full technology stack.
 								</Description>
 							</motion.div>
 
@@ -75,10 +81,10 @@ function Hero() {
 									spacing={2}
 									sx={{ mt: 3 }}
 								>
-									<Button href='/projects' variant='contained' color='primary'>
+									<Button href='/projects' kind='primary'>
 										View Projects
 									</Button>
-									<Button href='/contact' variant='outlined' color='inherit'>
+									<Button href='/contact' kind='ghost'>
 										Get in Touch
 									</Button>
 								</Stack>

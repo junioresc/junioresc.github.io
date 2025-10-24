@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LaunchIcon from '@mui/icons-material/Launch'
 import Modal from '../Modal'
+import Button from '../UI/Button'
 import {
 	ProjectSection,
 	SectionTitle,
@@ -12,10 +13,9 @@ import {
 	ProjectCardMedia,
 	ProjectCardContent,
 	ProjectTitle,
-	ProjectChip,
 	ProjectCardActions,
-	ActionButton,
 } from './styles'
+import Badge from '../UI/Badge'
 
 import runBuddyImg from '../../assets/images/screenshots/run-buddy.jpg'
 import nomadicaImg from '../../assets/images/screenshots/nomadica.jpg'
@@ -181,15 +181,16 @@ function Project() {
 											height='200'
 											image={imageMap[project.photo]}
 											alt={project.name}
+											loading='lazy'
 										/>
 										<ProjectCardContent>
 											<ProjectTitle gutterBottom variant='h6' component='h3'>
 												{project.name}
 											</ProjectTitle>
-											<ProjectChip label={project.tools} size='small' />
+											<Badge size='small'>{project.tools}</Badge>
 										</ProjectCardContent>
 										<ProjectCardActions>
-											<ActionButton
+											<Button
 												size='small'
 												startIcon={<GitHubIcon />}
 												href={project.github}
@@ -198,8 +199,8 @@ function Project() {
 												onClick={(e) => e.stopPropagation()}
 											>
 												Code
-											</ActionButton>
-											<ActionButton
+											</Button>
+											<Button
 												size='small'
 												startIcon={<LaunchIcon />}
 												href={project.deployed}
@@ -208,7 +209,7 @@ function Project() {
 												onClick={(e) => e.stopPropagation()}
 											>
 												Demo
-											</ActionButton>
+											</Button>
 										</ProjectCardActions>
 									</ProjectCard>
 								</motion.div>

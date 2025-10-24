@@ -1,6 +1,5 @@
 import { styled } from '@mui/material/styles'
 import { Box, Typography, Avatar } from '@mui/material'
-import heroBackground from '../../assets/images/hero-bg.jpeg'
 
 export const HeroContainer = styled(Box)(({ theme }) => ({
 	position: 'relative',
@@ -16,6 +15,7 @@ export const ContentBox = styled(Box)({
 	display: 'flex',
 	flexDirection: 'row',
 	alignItems: 'center',
+	justifySelf: 'center',
 	gap: '3rem',
 	'@media (max-width: 960px)': {
 		flexDirection: 'column',

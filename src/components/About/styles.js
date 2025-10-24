@@ -1,12 +1,6 @@
 import { styled } from '@mui/material/styles'
 import { Box, Typography, Card, CardContent, Chip } from '@mui/material'
 
-export const AboutSection = styled(Box)(({ theme }) => ({
-	paddingTop: '4rem',
-	paddingBottom: '4rem',
-	background: theme.palette.background.default,
-}))
-
 export const SectionTitle = styled(Typography)({
 	marginBottom: '0.5rem',
 	fontWeight: 800,

@@ -12,7 +12,6 @@ import {
 	TechChip,
 	ModalDescription,
 	StyledDialogActions,
-	ActionButton,
 } from './styles'
 
 import runBuddyImg from '../../assets/images/screenshots/run-buddy.jpg'
@@ -23,6 +22,7 @@ import pizzaHuntImg from '../../assets/images/screenshots/pizza-hunt.png'
 import dcAdoptImg from '../../assets/images/screenshots/dc-adopt.png'
 import otakuhqImg from '../../assets/images/screenshots/otakuhq.png'
 import wallappImg from '../../assets/images/screenshots/wallapp.png'
+import Button from '../UI/Button'
 
 function Modal({ onClose, currentProject }) {
 	const theme = useTheme()
@@ -69,7 +69,7 @@ function Modal({ onClose, currentProject }) {
 			</StyledDialogContent>
 
 			<StyledDialogActions>
-				<ActionButton
+				<Button
 					variant='outlined'
 					startIcon={<GitHubIcon />}
 					href={github}
@@ -77,8 +77,8 @@ function Modal({ onClose, currentProject }) {
 					rel='noopener noreferrer'
 				>
 					View Code
-				</ActionButton>
-				<ActionButton
+				</Button>
+				<Button
 					variant='contained'
 					startIcon={<LaunchIcon />}
 					href={deployed}
@@ -86,7 +86,7 @@ function Modal({ onClose, currentProject }) {
 					rel='noopener noreferrer'
 				>
 					View Demo
-				</ActionButton>
+				</Button>
 			</StyledDialogActions>
 		</StyledDialog>
 	)
