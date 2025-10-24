@@ -2,7 +2,6 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import { Box } from '@mui/material'
 import Header from '../components/Header'
-import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 
 function RootLayout() {
@@ -15,7 +14,6 @@ function RootLayout() {
 			}}
 		>
 			<Header />
-			<Hero />
 			<Box component='main' sx={{ flex: 1 }}>
 				<Outlet />
 			</Box>

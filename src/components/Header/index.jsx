@@ -35,17 +35,32 @@ function Header() {
 						<NavContainer>
 							<NavLink to='/' end>
 								{({ isActive }) => (
-									<NavButton isActive={isActive}>About Me</NavButton>
+									<NavButton
+										isActive={isActive}
+										aria-current={isActive ? 'page' : undefined}
+									>
+										About Me
+									</NavButton>
 								)}
 							</NavLink>
-							<NavLink to='/work'>
+							<NavLink to='/projects'>
 								{({ isActive }) => (
-									<NavButton isActive={isActive}>Work</NavButton>
+									<NavButton
+										isActive={isActive}
+										aria-current={isActive ? 'page' : undefined}
+									>
+										Projects
+									</NavButton>
 								)}
 							</NavLink>
 							<NavLink to='/contact'>
 								{({ isActive }) => (
-									<NavButton isActive={isActive}>Contact Me</NavButton>
+									<NavButton
+										isActive={isActive}
+										aria-current={isActive ? 'page' : undefined}
+									>
+										Contact Me
+									</NavButton>
 								)}
 							</NavLink>
 							<ResumeButton

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from '@mui/material'
+import { Container, Stack, Button } from '@mui/material'
 import { motion } from 'framer-motion'
 import juniorPhoto from '../../assets/images/junior.jpg'
 import {
@@ -38,7 +38,7 @@ function Hero() {
 
 	return (
 		<HeroContainer>
-			<Container maxWidth='lg' sx={{ position: 'relative', zIndex: 2, py: 8 }}>
+			<Container maxWidth='lg' sx={{ position: 'relative', zIndex: 2, py: 6 }}>
 				<motion.div
 					variants={containerVariants}
 					initial='hidden'
@@ -64,10 +64,24 @@ function Hero() {
 
 							<motion.div variants={itemVariants}>
 								<Description variant='body1'>
-									Passionate about creating innovative web solutions with modern
-									technologies. Specializing in the MERN stack, React, Node.js,
-									and building exceptional user experiences.
+									I design and build clean, performant interfaces with a focus
+									on detail, accessibility, and delightful UX.
 								</Description>
+							</motion.div>
+
+							<motion.div variants={itemVariants}>
+								<Stack
+									direction={{ xs: 'column', sm: 'row' }}
+									spacing={2}
+									sx={{ mt: 3 }}
+								>
+									<Button href='/projects' variant='contained' color='primary'>
+										View Projects
+									</Button>
+									<Button href='/contact' variant='outlined' color='inherit'>
+										Get in Touch
+									</Button>
+								</Stack>
 							</motion.div>
 						</TextBox>
 					</ContentBox>

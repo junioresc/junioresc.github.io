@@ -59,6 +59,7 @@ function Footer() {
 							<SocialIconButton
 								component='a'
 								href={link.href}
+								aria-label={link.label}
 								target={
 									link.name === 'GitHub' || link.name === 'LinkedIn'
 										? '_blank'

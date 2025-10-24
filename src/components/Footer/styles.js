@@ -2,9 +2,9 @@ import { styled } from '@mui/material/styles'
 import { Box, Typography, IconButton, Stack, Divider } from '@mui/material'
 
 export const FooterBox = styled(Box)(({ theme }) => ({
-	paddingTop: '3rem',
-	paddingBottom: '3rem',
-	background: `linear-gradient(180deg, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
+	paddingTop: '2rem',
+	paddingBottom: '2rem',
+	background: theme.palette.background.default,
 	borderTop: `1px solid ${theme.palette.divider}`,
 }))
 
@@ -19,13 +19,13 @@ export const SocialLinkBox = styled(Box)({
 })
 
 export const SocialIconButton = styled(IconButton)(({ theme }) => ({
-	color: theme.palette.primary.main,
-	border: `2px solid ${theme.palette.primary.main}40`,
-	transition: 'all 0.3s ease',
+	color: theme.palette.text.secondary,
+	border: `1px solid rgba(255,255,255,0.16)`,
+	transition: 'border-color 0.2s ease, color 0.2s ease',
 	'&:hover': {
-		backgroundColor: 'rgba(121, 115, 221, 0.1)',
-		borderColor: theme.palette.primary.main,
-		transform: 'translateY(-3px)',
+		backgroundColor: 'transparent',
+		borderColor: 'rgba(255,255,255,0.28)',
+		color: theme.palette.text.primary,
 	},
 }))
 

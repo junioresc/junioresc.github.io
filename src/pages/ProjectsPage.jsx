@@ -1,8 +1,8 @@
 import React from 'react'
 import Project from '../components/Project'
 
-function WorkPage() {
+function ProjectsPage() {
 	return <Project />
 }
 
-export default WorkPage
+export default ProjectsPage

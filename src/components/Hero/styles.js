@@ -4,34 +4,12 @@ import heroBackground from '../../assets/images/hero-bg.jpeg'
 
 export const HeroContainer = styled(Box)(({ theme }) => ({
 	position: 'relative',
-	minHeight: '70vh',
+	minHeight: '60vh',
 	display: 'flex',
 	alignItems: 'center',
-	overflow: 'hidden',
-	'&::before': {
-		content: '""',
-		position: 'absolute',
-		top: 0,
-		left: 0,
-		right: 0,
-		bottom: 0,
-		backgroundImage: `url(${heroBackground})`,
-		backgroundSize: 'cover',
-		backgroundPosition: 'center',
-		backgroundAttachment: 'fixed',
-		opacity: 0.15,
-		zIndex: 0,
-	},
-	'&::after': {
-		content: '""',
-		position: 'absolute',
-		top: 0,
-		left: 0,
-		right: 0,
-		bottom: 0,
-		background: `linear-gradient(135deg, ${theme.palette.primary.main}20 0%, ${theme.palette.secondary.main}20 100%)`,
-		zIndex: 1,
-	},
+	justifyContent: 'center',
+	paddingTop: '2rem',
+	paddingBottom: '2rem',
 }))
 
 export const ContentBox = styled(Box)({
@@ -45,22 +23,21 @@ export const ContentBox = styled(Box)({
 })
 
 export const ProfileAvatar = styled(Avatar)(({ theme }) => ({
-	width: 300,
-	height: 300,
-	border: `4px solid ${theme.palette.primary.main}`,
-	boxShadow: `0 0 40px ${theme.palette.primary.main}60`,
-	transition: 'all 0.3s ease',
+	width: 160,
+	height: 160,
+	border: '1px solid rgba(255,255,255,0.12)',
+	boxShadow: 'none',
+	transition: 'transform 0.2s ease',
 	'&:hover': {
-		transform: 'scale(1.05)',
-		boxShadow: `0 0 60px ${theme.palette.primary.main}80`,
+		transform: 'scale(1.02)',
 	},
 	'@media (max-width: 960px)': {
-		width: 250,
-		height: 250,
+		width: 140,
+		height: 140,
 	},
 	'@media (max-width: 600px)': {
-		width: 200,
-		height: 200,
+		width: 120,
+		height: 120,
 	},
 }))
 
@@ -80,14 +57,11 @@ export const Subtitle = styled(Typography)(({ theme }) => ({
 	textTransform: 'uppercase',
 }))
 
-export const Title = styled(Typography)({
+export const Title = styled(Typography)(({ theme }) => ({
 	fontWeight: 800,
-	marginBottom: '1rem',
-	background: 'linear-gradient(135deg, #FFFFFF 0%, #B8B8B8 100%)',
-	WebkitBackgroundClip: 'text',
-	WebkitTextFillColor: 'transparent',
-	backgroundClip: 'text',
-})
+	marginBottom: '0.75rem',
+	color: theme.palette.text.primary,
+}))
 
 export const Description = styled(Typography)(({ theme }) => ({
 	color: theme.palette.text.secondary,

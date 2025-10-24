@@ -17,12 +17,8 @@ export const ProjectSection = styled(Box)(({ theme }) => ({
 }))
 
 export const SectionTitle = styled(Typography)({
-	marginBottom: '1rem',
+	marginBottom: '0.5rem',
 	fontWeight: 800,
-	background: 'linear-gradient(135deg, #7973DD 0%, #AD8350 100%)',
-	WebkitBackgroundClip: 'text',
-	WebkitTextFillColor: 'transparent',
-	backgroundClip: 'text',
 })
 
 export const SectionSubtitle = styled(Typography)(({ theme }) => ({
@@ -36,9 +32,9 @@ export const ProjectCard = styled(Card)({
 	display: 'flex',
 	flexDirection: 'column',
 	cursor: 'pointer',
-	transition: 'all 0.3s ease',
+	transition: 'transform 0.2s ease',
 	'&:hover': {
-		transform: 'translateY(-8px)',
+		transform: 'translateY(-2px)',
 	},
 })
 
@@ -55,9 +51,9 @@ export const ProjectTitle = styled(Typography)({
 })
 
 export const ProjectChip = styled(Chip)(({ theme }) => ({
-	backgroundColor: 'rgba(121, 115, 221, 0.1)',
-	border: '1px solid rgba(121, 115, 221, 0.3)',
-	color: theme.palette.text.primary,
+	backgroundColor: 'transparent',
+	border: '1px solid rgba(255,255,255,0.16)',
+	color: theme.palette.text.secondary,
 }))
 
 export const ProjectCardActions = styled(CardActions)({

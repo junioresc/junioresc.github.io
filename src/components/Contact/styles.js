@@ -2,18 +2,14 @@ import { styled } from '@mui/material/styles'
 import { Box, Typography, TextField, Button, Alert, Paper } from '@mui/material'
 
 export const ContactSection = styled(Box)(({ theme }) => ({
-	paddingTop: '5rem',
-	paddingBottom: '5rem',
-	background: `linear-gradient(180deg, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
+	paddingTop: '4rem',
+	paddingBottom: '4rem',
+	background: theme.palette.background.default,
 }))
 
 export const SectionTitle = styled(Typography)({
-	marginBottom: '1rem',
+	marginBottom: '0.5rem',
 	fontWeight: 800,
-	background: 'linear-gradient(135deg, #7973DD 0%, #AD8350 100%)',
-	WebkitBackgroundClip: 'text',
-	WebkitTextFillColor: 'transparent',
-	backgroundClip: 'text',
 })
 
 export const SectionSubtitle = styled(Typography)(({ theme }) => ({
@@ -23,12 +19,12 @@ export const SectionSubtitle = styled(Typography)(({ theme }) => ({
 }))
 
 export const FormPaper = styled(Paper)(({ theme }) => ({
-	padding: '3rem',
-	background: `linear-gradient(135deg, ${theme.palette.background.paper} 0%, rgba(121, 115, 221, 0.05) 100%)`,
-	border: `1px solid ${theme.palette.primary.main}40`,
+	padding: '2rem',
+	background: theme.palette.background.paper,
+	border: '1px solid rgba(255,255,255,0.08)',
 	borderRadius: '12px',
 	'@media (max-width: 960px)': {
-		padding: '2rem',
+		padding: '1.5rem',
 	},
 }))
 
@@ -44,15 +40,15 @@ export const StyledAlert = styled(Alert)({
 
 export const StyledTextField = styled(TextField)({
 	'& .MuiOutlinedInput-root': {
-		backgroundColor: 'rgba(0, 0, 0, 0.2)',
+		backgroundColor: 'transparent',
 	},
 })
 
 export const SubmitButton = styled(Button)({
-	paddingTop: '0.75rem',
-	paddingBottom: '0.75rem',
-	fontSize: '1.1rem',
-	borderRadius: '8px',
+	paddingTop: '0.6rem',
+	paddingBottom: '0.6rem',
+	fontSize: '1rem',
+	borderRadius: 8,
 	alignSelf: 'center',
 	minWidth: 200,
 })
