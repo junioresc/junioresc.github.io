@@ -1,6 +1,6 @@
 # Junior Escobar - Portfolio Website
 
-A modern, professional portfolio website showcasing my work as a Full-Stack Web Developer, built with React 18 and Material UI.
+A modern, professional portfolio website showcasing my work as a Full-Stack Web Developer, built with React 18, Vite, Material UI, and React Router.
 
 ## 🎨 Features
 
@@ -11,77 +11,93 @@ A modern, professional portfolio website showcasing my work as a Full-Stack Web 
 - **Project Showcase**: Interactive project cards with detailed modals
 - **Contact Form**: Validated contact form with Material UI components
 - **SEO Optimized**: Proper meta tags and semantic HTML
+- **Client-Side Routing**: React Router v6 with modern navigation
 
 ## 🚀 Technologies
 
-### Frontend
+### Frontend Stack
 
 - **React 18.3.1** - Latest React with concurrent features
+- **Vite 5.2** - Lightning-fast build tool and dev server
 - **Material UI 5.15** - Modern component library with styled-components
 - **Framer Motion 11** - Smooth animations and transitions
+- **React Router 7.9** - Client-side routing with modern API
 - **Emotion Styled** - CSS-in-JS with styled components pattern
 
-### Build Tools
+### Build & Deployment
 
-- **Vite 5.2** - Lightning-fast build tool and dev server
+- **Vite** - 10-100x faster than Create React App
 - **Rollup** - Optimized production builds
+- **GitHub Pages** - Automated deployment
+- **ES Modules** - Modern JavaScript standards
 
-## 📦 Installation
+## 📦 Quick Start
 
 ```bash
 # Install dependencies
 npm install
 
-# Start development server (Vite)
+# Start development server (Vite - much faster than CRA!)
 npm run dev
 
 # Build for production
 npm run build
 
-# Preview production build
+# Preview production build locally
 npm run preview
 
 # Deploy to GitHub Pages
 npm run deploy
 ```
 
+**Development Server**: http://localhost:3000  
+**Live Site**: https://junioresc.github.io/
+
 ## 🏗️ Project Structure
 
 ```
 src/
-├── components/
-│   ├── About/
-│   │   ├── index.jsx       # Component logic
-│   │   └── styles.js       # Styled components
-│   ├── Contact/
-│   │   ├── index.jsx
-│   │   └── styles.js
-│   ├── Footer/
-│   │   ├── index.jsx
-│   │   └── styles.js
-│   ├── Header/
-│   │   ├── index.jsx
-│   │   └── styles.js
-│   ├── Hero/
-│   │   ├── index.jsx
-│   │   └── styles.js
-│   ├── Modal/
-│   │   ├── index.jsx
-│   │   └── styles.js
-│   └── Project/
-│       ├── index.jsx
-│       └── styles.js
+├── components/           # Reusable UI components
+│   ├── About/           # Skills and bio section
+│   │   ├── index.jsx    # Component logic
+│   │   └── styles.js    # Styled components
+│   ├── Contact/         # Contact form
+│   ├── Footer/          # Site footer
+│   ├── Header/          # Navigation header
+│   ├── Hero/            # Landing section
+│   ├── Modal/           # Project detail modals
+│   ├── Project/         # Project showcase
+│   └── UI/              # Reusable UI components
+│       ├── Badge/       # Skill tags
+│       ├── Button/      # Custom buttons
+│       ├── Card/        # Content cards
+│       └── Section/     # Page sections
+├── layouts/
+│   └── RootLayout.jsx   # Shared layout (Header + Footer)
+├── pages/               # Route components
+│   ├── HomePage.jsx     # / route (Hero + About)
+│   ├── ProjectsPage.jsx # /projects route
+│   └── ContactPage.jsx  # /contact route
 ├── assets/
-│   ├── images/        # Project screenshots and photos
-│   └── resources/     # Resume PDF
+│   ├── images/          # Project screenshots and photos
+│   └── resources/       # Resume PDF
 ├── utils/
-│   └── helpers.js     # Utility functions
-├── theme.js           # Material UI theme configuration
-├── App.jsx            # Main application component
-└── index.jsx          # Application entry point
+│   └── helpers.js       # Utility functions
+├── theme.js             # Material UI theme configuration
+├── router.jsx           # React Router configuration
+├── App.jsx              # Router provider wrapper
+└── index.jsx            # Application entry point
 ```
 
-## 🎨 Design Features
+## 🛣️ Routes
+
+| Route       | Component    | Description             |
+| ----------- | ------------ | ----------------------- |
+| `/`         | HomePage     | Hero section + About me |
+| `/projects` | ProjectsPage | Project showcase grid   |
+| `/contact`  | ContactPage  | Contact form            |
+
+## 🎨 Design System
 
 ### Color Palette
 
@@ -92,7 +108,7 @@ src/
 
 ### Typography
 
-- **Font**: Inter - Clean, modern sans-serif
+- **Font**: Inter - Clean, modern sans-serif via Google Fonts
 - **Weights**: 300-900 for hierarchy and emphasis
 - **Responsive sizes**: Fluid typography that scales with viewport
 
@@ -113,59 +129,31 @@ src/
   - lg: 1280px (desktop)
   - xl: 1920px (large desktop)
 
-## 🌐 Deployment
+## 🎯 Key Sections
 
-### GitHub Pages
+### About Me
 
-The site is configured for deployment to GitHub Pages:
+- Professional bio highlighting full-stack capabilities
+- **Frontend Skills**: JavaScript ES6+, React, TypeScript, Material UI, Tailwind, Vite, Next.js, Redux, Zustand, and more
+- **Backend Skills**: Python, Node.js, Express, Django, SQL/NoSQL, REST APIs, GraphQL, CI/CD, Docker, and more
+- Skills displayed as interactive chips with icons
 
-```bash
-# Build and deploy in one command
-npm run deploy
-```
+### Projects
 
-This will:
+- 8 featured projects with high-quality screenshots
+- Technology tags for each project
+- Links to live demos and source code
+- Detailed descriptions in modal view
+- Responsive grid layout (4 → 2 → 1 columns)
 
-1. Build the production version
-2. Push to the `gh-pages` branch
-3. Update the live site at https://junioresc.github.io/
+### Contact
 
-### Environment Setup
+- Validated contact form with real-time feedback
+- Name, email, and message fields
+- Professional Material UI design
+- Form validation with error messages
 
-Make sure your `package.json` has the correct homepage:
-
-```json
-"homepage": "http://junioresc.github.io/"
-```
-
-## 🔧 Development
-
-### Running Locally
-
-```bash
-# Install dependencies
-npm install
-
-# Start Vite dev server at http://localhost:3000
-npm run dev
-```
-
-Vite provides:
-
-- ⚡ Lightning-fast cold starts
-- 🔥 Instant hot module replacement
-- 🎯 Better error messages
-
-### Building
-
-```bash
-# Create production build
-npm run build
-
-# The build folder will contain optimized static files
-```
-
-## 📊 Performance
+## 🚀 Performance
 
 - **Vite Build**: Lightning-fast builds with Rollup
 - **Code Splitting**: Automatic code splitting for optimal loading
@@ -174,28 +162,86 @@ npm run build
 - **ES Modules**: Native ESM for faster dev experience
 - **Bundle Size**: 508.44 kB (160.95 kB gzipped)
 
-## 🎯 Key Sections
+## 🌐 Deployment
 
-### About Me
+### GitHub Pages
 
-- Professional bio
-- Frontend proficiencies (HTML, CSS, JavaScript, React, etc.)
-- Backend proficiencies (Node, Express, MongoDB, etc.)
-- Skills displayed as interactive chips
+The site is configured for automated deployment:
 
-### Projects
+```bash
+# Build and deploy in one command
+npm run deploy
+```
 
-- 8 featured projects with screenshots
-- Technology tags for each project
-- Links to live demos and source code
-- Detailed descriptions in modal view
+This will:
 
-### Contact
+1. Build the production version with Vite
+2. Push to the `gh-pages` branch
+3. Update the live site at https://junioresc.github.io/
 
-- Validated contact form
-- Name, email, and message fields
-- Real-time validation feedback
-- Professional form design
+### Environment Setup
+
+The `package.json` is configured with the correct homepage:
+
+```json
+"homepage": "http://junioresc.github.io/"
+```
+
+## 🔧 Development
+
+### Why Vite?
+
+- ⚡ **10-100x faster** than Create React App
+- 🔥 **Instant** hot module replacement
+- 📦 **Smaller** bundle sizes
+- 🚀 **Modern** ES modules
+- 🛠️ **Better** developer experience
+
+### Styled Components Architecture
+
+Each component has two files for better organization:
+
+```javascript
+// components/Header/styles.js
+export const NavContainer = styled(Box)({
+	display: 'flex',
+	gap: '0.5rem',
+})
+
+export const NavButton = styled(Button)({
+	borderRadius: '8px',
+	paddingLeft: '1rem',
+})
+```
+
+```jsx
+// components/Header/index.jsx
+import { NavContainer, NavButton } from './styles'
+;<NavContainer>
+	<NavButton>About</NavButton>
+</NavContainer>
+```
+
+**Benefits:**
+
+- 🎨 Cleaner JSX (no more cluttered `sx` props)
+- 📁 Better organization (styles in separate files)
+- 🔧 Easier maintenance (find styles quickly)
+- ♻️ Reusable styled components
+
+## 📊 Recent Updates
+
+### Latest Changes
+
+- ✅ **Updated Skills**: Added comprehensive full-stack skills including Vite, Material UI, Framer Motion, TypeScript, Next.js, Redux, Zustand, Django, Docker, and more
+- ✅ **Enhanced Hero**: Updated description to emphasize full-stack capabilities
+- ✅ **Improved Modal**: Fixed modal background opacity for better visibility
+- ✅ **Modern Stack**: React 18 + Vite + Material UI + React Router v6
+
+### Technology Stack Evolution
+
+**From**: React 16 + Create React App + Custom CSS  
+**To**: React 18 + Vite + Material UI + Styled Components + React Router
 
 ## 🔗 Links
 
@@ -213,11 +259,10 @@ npm run build
 - Vite for the blazing-fast build tool
 - Material UI for the excellent component library
 - Framer Motion for smooth animations
+- React Router for modern client-side routing
 - University of Central Florida for the Full-Stack Web Development Certificate
 - All contributors to the open-source libraries used in this project
 
-## 📖 Additional Documentation
+---
 
-- [VITE_MIGRATION.md](./VITE_MIGRATION.md) - Migration guide from CRA to Vite
-- [DEPLOYMENT.md](./DEPLOYMENT.md) - Deployment instructions
-- [CHANGELOG.md](./CHANGELOG.md) - Version history
+**Built with ❤️ using React 18, Vite, Material UI, Framer Motion, and React Router**
