@@ -12,6 +12,7 @@ import {
 	Title,
 	Description,
 } from './styles'
+import { Link } from 'react-router-dom'
 
 function Hero() {
 	const containerVariants = {
@@ -81,12 +82,16 @@ function Hero() {
 									spacing={2}
 									sx={{ mt: 3 }}
 								>
-									<Button href='/projects' kind='primary'>
-										View Projects
-									</Button>
-									<Button href='/contact' kind='ghost'>
-										Get in Touch
-									</Button>
+									<Link to='/projects'>
+										<Button kind='primary'>
+											View Projects
+										</Button>
+									</Link>
+									<Link to='/contact'>
+										<Button kind='ghost'>
+											Get in Touch
+										</Button>
+									</Link>
 								</Stack>
 							</motion.div>
 						</TextBox>
